@@ -47,7 +47,7 @@
 
       <a href="{% url 'ads:index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="{% static 'ads/img/favicon.svg' %}" alt=""> -->
+        <!-- <img src="{% static 'ads/img/favicon.svg' %}" alt="ads-logo"> -->
         <h1>ads</h1>
         <span>.</span>
       </a>
@@ -265,7 +265,9 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-key"></i></div>
+              <!-- <div class="icon flex-shrink-0"><img class="img-fluid" src="{% static 'ads/img/services/service-icon-llave.png' %}" alt="Icon"></div> -->
+
               <div>
                 <h4 class="title"><a href="{% url 'ads:services-details' %}" class="stretched-link">Llave en mano</a></h4>
                 <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
@@ -276,7 +278,7 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-pencil"></i></div>
               <div>
                 <h4 class="title"><a href="{% url 'ads:services-details' %}" class="stretched-link">Dirección</a></h4>
                 <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
@@ -286,7 +288,7 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-palette"></i></div>
               <div>
                 <h4 class="title"><a href="{% url 'ads:services-details' %}" class="stretched-link">Diseño</a></h4>
                 <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
@@ -296,7 +298,7 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-house"></i></div>
               <div>
                 <h4 class="title"><a href="{% url 'ads:services-details' %}" class="stretched-link">Construcción</a></h4>
                 <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -306,7 +308,7 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-palette2"></i></div>
               <div>
                 <h4 class="title"><a href="{% url 'ads:services-details' %}" class="stretched-link">Restauración</a></h4>
                 <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
@@ -316,7 +318,7 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-truck"></i></div>
               <div>
                 <h4 class="title"><a href="{% url 'ads:services-details' %}" class="stretched-link">Suministros</a></h4>
                 <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
@@ -507,7 +509,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="content px-xl-5">
-              <h3><span>Preguntas Frecuentes</span></h3>
+              <h3><span><strong>Preguntas</strong> Frecuentes</span></h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p>
@@ -955,7 +957,8 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="{% url 'ads:index' %}" class="logo d-flex align-items-center">
-            <span>ads</span>
+            <img src="{% static 'ads/img/favicon.svg' %}" alt="ads logo">
+            <!-- <span>ads</span> -->
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
@@ -967,7 +970,7 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Enlaces</h4>
           <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
